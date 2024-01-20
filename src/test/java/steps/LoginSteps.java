@@ -1,12 +1,12 @@
 package steps;
 
-import java.io.Console;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,11 +15,16 @@ import io.cucumber.java.en.When;
 public class LoginSteps {
 	
 	WebDriver driver;
+	WebDriverWait wait;
+	
+	@Before
+	public void setUpsetU() throws Exception {
+		driver = SetUp.getDriver();
+		wait = SetUp.getWait();
+	}
 	
 	@Given("the user is in the index page")
 	public void isUserInIndexPage() {
-		System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver.exe");
-		driver = new FirefoxDriver();
 		driver.navigate().to("https://www.demoblaze.com/");
 	}
 	
@@ -48,5 +53,6 @@ public class LoginSteps {
 		String name = driver.findElement(By.id("nameofuser")).getText();
 		
 		Assert.assertTrue(name != null);
+		SetUp.closeDriver();
 	}
 }
