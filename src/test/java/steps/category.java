@@ -19,7 +19,7 @@ public class category {
 		wait = SetUp.getWait();
 	}
 	
-	@Given("^the user clicks the (.*) button")
+	@Given("^the user clicks the (.*) in the left")
 	public void userClicksCategory(String Category) {
 		driver.findElement(By.linkText(Category)).click();
 	}

@@ -19,7 +19,7 @@ public class AboutUsSteps {
 	WebDriverWait wait;
 	
 	@Before
-	public void setUpsetU() throws Exception {
+	public void setUp() throws Exception {
 		driver = SetUp.getDriver();
 		wait = SetUp.getWait();
 	}

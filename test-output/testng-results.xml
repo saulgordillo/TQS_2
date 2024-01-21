@@ -1,79 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-20T19:26:23 CET" name="Default suite" finished-at="2024-01-20T19:26:31 CET" duration-ms="7739">
+  <suite started-at="2024-01-21T17:38:03 CET" name="Default suite" finished-at="2024-01-21T17:38:24 CET" duration-ms="20927">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCategoryTest@7a35b0f5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunProductsTest@7a35b0f5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-01-20T19:26:23 CET" name="Default test" finished-at="2024-01-20T19:26:31 CET" duration-ms="7739">
-      <class name="RunCategoryTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunCategoryTest@7a35b0f5]" started-at="2024-01-20T19:26:23 CET" name="setUpClass" finished-at="2024-01-20T19:26:24 CET" duration-ms="245" status="PASS">
+    <test started-at="2024-01-21T17:38:03 CET" name="Default test" finished-at="2024-01-21T17:38:24 CET" duration-ms="20927">
+      <class name="RunProductsTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunProductsTest@7a35b0f5]" started-at="2024-01-21T17:38:03 CET" name="setUpClass" finished-at="2024-01-21T17:38:03 CET" duration-ms="202" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2d000e80]]>
+                <![CDATA[org.testng.TestRunner@a518813]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCategoryTest@7a35b0f5]" started-at="2024-01-20T19:26:24 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-20T19:26:29 CET" duration-ms="5116" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunProductsTest@7a35b0f5]" started-at="2024-01-21T17:38:03 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-21T17:38:24 CET" duration-ms="20684" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Check Categories"]]>
+                <![CDATA["Place order"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Categories"]]>
+                <![CDATA["placeOrder"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCategoryTest@7a35b0f5]" started-at="2024-01-20T19:26:29 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-20T19:26:30 CET" duration-ms="1168" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check Categories"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Categories"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunCategoryTest@7a35b0f5]" started-at="2024-01-20T19:26:30 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-20T19:26:31 CET" duration-ms="1158" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check Categories"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Categories"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunCategoryTest@7a35b0f5]" started-at="2024-01-20T19:26:31 CET" name="tearDownClass" finished-at="2024-01-20T19:26:31 CET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunProductsTest@7a35b0f5]" started-at="2024-01-21T17:38:24 CET" name="tearDownClass" finished-at="2024-01-21T17:38:24 CET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- RunCategoryTest -->
+      </class> <!-- RunProductsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
